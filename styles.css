@@ -1,0 +1,449 @@
+/* importing fonts */
+@import url("https://use.typekit.net/hiz7sft.css");
+@import url("https://use.typekit.net/hiz7sft.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* text styling */
+h1 {
+  font-family: 'Muli';
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+h2 {
+  font-family: 'Muli';
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+h3 {
+  font-family: 'Muli';
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+p {
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+h6 {
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* styling for header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  /* sticky header */
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+  /* styling for nav bar */
+  .nav_links li{
+    display: inline-block;
+    padding: 0px 100px;
+  }
+  .nav_links li a{
+    color: #b4b4b4;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Lato';
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Lato';
+  }
+
+  /* active page in nav bar */
+  .nav_links li a.current {
+    color: black;
+  }
+
+/* styling for splash */
+.splash{
+  height: 530px;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  padding: 0 250px;
+  text-align: left;
+}
+
+.splash_text{
+  padding: 270px 0px;
+}
+
+/* styling for myBrightlink */
+.mybrightlink{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 250px;
+}
+
+.mybrightlink a{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1E8A66;
+  transition: all 0.3s ease 0s;
+}
+
+.mybrightlink a:hover{
+  color: #00D991;
+  transition: all 0.3s ease 0s;
+}
+
+#mybrightlink_text{
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 350px;
+}
+
+/* hover on animation for image */
+#mybrightlink_image:hover {
+  transform: scale(1.05,1.05);
+  /* box-shadow: 0 10px 30px #F4EEEE; */
+  transition: all 0.3s ease 0s;
+}
+
+/* hover off animation for image */
+#mybrightlink_image {
+  transition: all 0.3s ease 0s;
+}
+
+/* styling for logo */
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 250px;
+}
+
+.logo a{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1E8A66;
+  transition: all 0.3s ease 0s;
+}
+
+.logo a:hover{
+  color: #00D991;
+  transition: all 0.3s ease 0s;
+}
+
+#logo_text{
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 350px;
+}
+
+/* hover on animation for image */
+#logo_image:hover {
+  transform: scale(1.05,1.05);
+  /* box-shadow: 0 10px 30px #F4EEEE; */
+  transition: all 0.3s ease 0s;
+}
+
+/* hover off animation for image */
+#logo_image {
+  transition: all 0.3s ease 0s;
+}
+
+/* styling for hitchrides */
+.hitchrides{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 250px;
+}
+
+.hitchrides a{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1E8A66;
+  transition: all 0.3s ease 0s;
+}
+
+.hitchrides a:hover{
+  color: #00D991;
+  transition: all 0.3s ease 0s;
+}
+
+#hitchrides_text{
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 350px;
+}
+
+/* hover on animation for image */
+#hitchrides_image:hover {
+  transform: scale(1.05,1.05);
+  /* box-shadow: 0 10px 30px #F4EEEE; */
+  transition: all 0.3s ease 0s;
+}
+
+/* hover off animation for image */
+#hitchrides_image {
+  transition: all 0.3s ease 0s;
+}
+
+/* styling for soundcloud */
+.soundcloud{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 250px;
+}
+
+.soundcloud a{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1E8A66;
+  transition: all 0.3s ease 0s;
+}
+
+.soundcloud a:hover{
+  color: #00D991;
+  transition: all 0.3s ease 0s;
+}
+
+#soundcloud_text{
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 350px;
+}
+
+/* hover on animation for image */
+#soundcloud_image:hover {
+  transform: scale(1.05,1.05);
+  /* box-shadow: 0 10px 30px #F4EEEE; */
+  transition: all 0.3s ease 0s;
+}
+
+/* hover off animation for image */
+#soundcloud_image {
+  transition: all 0.3s ease 0s;
+}
+
+/* styling for footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+  /* styling for contact */
+  .contact li{
+    display: inline-block;
+    padding: 40px 100px 60px 100px;
+  }
+  .contact li a{
+    color: #b4b4b4;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Lato';
+    transition: all 0.3s ease 0s;
+  }
+
+  .contact li a:hover{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Lato';
+  }
+
+.footer h6{
+  color: #b4b4b4;
+}
+
+/* about styling */
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 200px 250px 100px 250px;
+}
+
+.about_text {
+  padding-right: 100px;
+}
+
+.about_text h3{
+  color: #6E6E6E;
+  padding-top: 10px;
+}
+
+/* other stuff styling */
+
+.more {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 250px 100px 250px;
+}
+
+.more_text {
+  padding-left: 100px;
+}
+
+.more_text a{
+  text-decoration: none;
+  color: #1E8A66;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  transition: all 0.3s ease 0s;
+}
+
+.more_text a:hover{
+  color: #00D991;
+  transition: all 0.3s ease 0s;
+}
+
+/* myBrightlink project styling */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: center;
+  padding: 300px 250px;
+  text-align: left;
+}
+
+.title h2 {
+  color: #6E6E6E;
+}
+
+/* objectives, needs, and solution styling */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 25px 250px;
+}
+
+.section1 h6{
+  color: #6E6E6E;
+  font-style: italic;
+  padding: 0 0 50px 0;
+}
+
+.section1 p{
+  padding-top: 10px;
+}
+
+.section1 img{
+  padding: 50px 0;
+  max-width: 100%;
+  align-self: center;
+}
+
+#divider {
+  display: block;
+  align-self: center;
+  height: 2px;
+  width: 300px;
+  border-radius: 10px;
+  background: #b4b4b4;
+  opacity: 50%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* main content styling */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 25px 250px;
+}
+
+.section2 p{
+  padding-top: 10px;
+}
+
+/* id for adding top padding of 50px */
+#add_top_padding {
+  padding-top: 50px;
+}
+
+.section2 h2{
+  padding: 50px 0 0 0;
+}
+
+.section2 h3{
+  padding: 50px 0 0 0;
+}
+
+/* grey h3 styling */
+#greytext {
+  color: #6E6E6E;
+}
+
+.section2 img{
+  align-self: center;
+  max-width: 100%;
+  padding: 50px 0 0 0;
+}
+
+.withcaption {
+  padding-bottom: 10px;
+}
+
+.section2 h6 {
+  color: #b4b4b4;
+  padding: 10px 0 0 0;
+  justify-self: center;
+  text-align: center; 
+}
