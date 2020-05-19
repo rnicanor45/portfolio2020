@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+/* styling for content under header */
+.main {
+  padding: 0 250px 0 250px;
+}
+
 /* text styling */
 h1 {
   font-family: 'Muli';
@@ -46,16 +51,16 @@ h6 {
 
 /* styling for header */
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
+  align-self: center;
+  padding-top: 30px;
   padding-bottom: 30px;
   /* sticky header */
   background-color: white;
   position: fixed;
-  top: 0;
-  width: 100%;
   z-index: 1000;
 }
 
@@ -90,7 +95,6 @@ header {
   display: flex;
   justify-content: start;
   align-self: center;
-  padding: 0 250px;
   text-align: left;
 }
 
@@ -98,15 +102,15 @@ header {
   padding: 270px 0px;
 }
 
-/* styling for myBrightlink */
-.mybrightlink{
+/* styling for project list on home */
+.project{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 100px 250px;
+  padding: 100px 0;
 }
 
-.mybrightlink a{
+.project a{
   font-family: 'Lato';
   font-size: 16px;
   font-weight: 500;
@@ -115,12 +119,12 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-.mybrightlink a:hover{
+.project a:hover{
   color: #00D991;
   transition: all 0.3s ease 0s;
 }
 
-#mybrightlink_text{
+.project_text{
   padding-right: 50px;
   display: flex;
   flex-direction: column;
@@ -130,143 +134,14 @@ header {
 }
 
 /* hover on animation for image */
-#mybrightlink_image:hover {
+.project_image:hover {
   transform: scale(1.05,1.05);
   /* box-shadow: 0 10px 30px #F4EEEE; */
   transition: all 0.3s ease 0s;
 }
 
 /* hover off animation for image */
-#mybrightlink_image {
-  transition: all 0.3s ease 0s;
-}
-
-/* styling for logo */
-.logo{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px 250px;
-}
-
-.logo a{
-  font-family: 'Lato';
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #1E8A66;
-  transition: all 0.3s ease 0s;
-}
-
-.logo a:hover{
-  color: #00D991;
-  transition: all 0.3s ease 0s;
-}
-
-#logo_text{
-  padding-right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  max-width: 350px;
-}
-
-/* hover on animation for image */
-#logo_image:hover {
-  transform: scale(1.05,1.05);
-  /* box-shadow: 0 10px 30px #F4EEEE; */
-  transition: all 0.3s ease 0s;
-}
-
-/* hover off animation for image */
-#logo_image {
-  transition: all 0.3s ease 0s;
-}
-
-/* styling for hitchrides */
-.hitchrides{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px 250px;
-}
-
-.hitchrides a{
-  font-family: 'Lato';
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #1E8A66;
-  transition: all 0.3s ease 0s;
-}
-
-.hitchrides a:hover{
-  color: #00D991;
-  transition: all 0.3s ease 0s;
-}
-
-#hitchrides_text{
-  padding-right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  max-width: 350px;
-}
-
-/* hover on animation for image */
-#hitchrides_image:hover {
-  transform: scale(1.05,1.05);
-  /* box-shadow: 0 10px 30px #F4EEEE; */
-  transition: all 0.3s ease 0s;
-}
-
-/* hover off animation for image */
-#hitchrides_image {
-  transition: all 0.3s ease 0s;
-}
-
-/* styling for soundcloud */
-.soundcloud{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px 250px;
-}
-
-.soundcloud a{
-  font-family: 'Lato';
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #1E8A66;
-  transition: all 0.3s ease 0s;
-}
-
-.soundcloud a:hover{
-  color: #00D991;
-  transition: all 0.3s ease 0s;
-}
-
-#soundcloud_text{
-  padding-right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  max-width: 350px;
-}
-
-/* hover on animation for image */
-#soundcloud_image:hover {
-  transform: scale(1.05,1.05);
-  /* box-shadow: 0 10px 30px #F4EEEE; */
-  transition: all 0.3s ease 0s;
-}
-
-/* hover off animation for image */
-#soundcloud_image {
+.project_image {
   transition: all 0.3s ease 0s;
 }
 
@@ -310,7 +185,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 200px 250px 100px 250px;
+  padding: 200px 0 100px 0;
 }
 
 .about_text {
@@ -328,7 +203,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 250px 100px 250px;
+  padding: 50px 0 100px 0;
 }
 
 .more_text {
@@ -350,7 +225,7 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-/* myBrightlink project styling */
+/* case study styling */
 
 .title {
   display: flex;
