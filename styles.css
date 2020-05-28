@@ -1,6 +1,7 @@
 /* importing fonts */
 @import url("https://use.typekit.net/hiz7sft.css");
 @import url("https://use.typekit.net/hiz7sft.css");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -10,43 +11,48 @@
 
 /* styling for content under header */
 .main {
-  padding: 0 250px 0 250px;
+  padding: 0;
 }
 
 /* text styling */
 h1 {
-  font-family: 'Muli';
-  font-size: 36px;
+  font-family: 'Crimson Text';
+  font-size: 3rem;
   font-weight: bold;
-  line-height: 1.25;
+  line-height: 1.5;
+  color: #262626;
 }
 
 h2 {
-  font-family: 'Muli';
-  font-size: 32px;
+  font-family: 'Crimson Text';
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.25;
+  line-height: 1.5;
+  color: #262626;
 }
 
 h3 {
-  font-family: 'Muli';
-  font-size: 24px;
+  font-family: 'Crimson Text';
+  font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 2;
+  color: #262626;
 }
 
 p {
-  font-family: 'Lato';
-  font-size: 18px;
+  font-family: 'Open Sans';
+  font-size: 1.125rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 2;
+  color: #262626;
 }
 
 h6 {
-  font-family: 'Lato';
-  font-size: 16px;
+  font-family: 'Open Sans';
+  font-size: 1rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 2;
+  color: #262626;
 }
 
 /* styling for header */
@@ -56,10 +62,10 @@ header {
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
   /* sticky header */
-  background-color: white;
+  background-color: #262626;
   position: fixed;
   z-index: 1000;
 }
@@ -67,70 +73,109 @@ header {
   /* styling for nav bar */
   .nav_links li{
     display: inline-block;
-    padding: 0px 100px;
+    padding: 0 6.25rem;
   }
   .nav_links li a{
     color: #b4b4b4;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
     font-family: 'Lato';
     transition: all 0.3s ease 0s;
   }
 
   .nav_links li a:hover{
-    color: black;
-    font-size: 18px;
+    color: white;
+    font-size: 1.125rem;
     text-decoration: none;
     font-family: 'Lato';
   }
 
   /* active page in nav bar */
   .nav_links li a.current {
-    color: black;
+    color: white;
+    font-weight:500;
   }
 
 /* styling for splash */
 .splash{
-  height: 530px;
+  height: 100vh;
   display: flex;
   justify-content: start;
   align-self: center;
   text-align: left;
+  /* parallax background */
+  background: url('/images/splash_bg.png') fixed no-repeat center center/cover;
 }
 
-.splash_text{
-  padding: 270px 0px;
+.splash .splash_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0 11.25rem;
+}
+
+.splash .splash_text h1{
+  color: #262626;
 }
 
 /* styling for project list on home */
-.project{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px 0;
+.projects_list{
+  padding: 4rem 11.25rem;
 }
 
-.project a{
-  font-family: 'Lato';
-  font-size: 16px;
-  font-weight: 500;
+.projects_list h1{
+  padding-top: 8rem;
+  display: block;
+  color: #262626;
+}
+
+.project{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+.project .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
   text-decoration: none;
+  background: white;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: #1E8A66;
+  border-radius: .25rem;
   color: #1E8A66;
   transition: all 0.3s ease 0s;
 }
 
-.project a:hover{
-  color: #00D991;
+.project .button:hover{
+  color: white;
+  background: #1E8A66;
   transition: all 0.3s ease 0s;
 }
 
 .project_text{
-  padding-right: 50px;
+  padding-left: 6.125rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  max-width: 350px;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
 }
 
 /* hover on animation for image */
@@ -151,50 +196,65 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
+  background: #262626;
 }
 
   /* styling for contact */
-  .contact li{
+  .footer li{
     display: inline-block;
-    padding: 40px 100px 60px 100px;
+    padding: 1rem 2rem 4rem 2rem;
   }
-  .contact li a{
+  .footer a{
     color: #b4b4b4;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     transition: all 0.3s ease 0s;
   }
 
-  .contact li a:hover{
-    color: black;
-    font-size: 18px;
+  .footer a:hover{
+    color: white;
+    font-size: 1.125rem;
     text-decoration: none;
-    font-family: 'Lato';
+    font-family: 'Open Sans';
   }
 
 .footer h6{
   color: #b4b4b4;
 }
 
+.footer h2{
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.footer p{
+  color: #b4b4b4;
+}
+
 /* about styling */
 
 .about {
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 200px 0 100px 0;
+  padding: 0 0 0 11.25rem;
 }
 
 .about_text {
-  padding-right: 100px;
+  padding-right: 11.25rem;
+} 
+
+.about_text h2{
+  color: #6E6E6E;
+  padding-top: .625rem;
 }
 
-.about_text h3{
-  color: #6E6E6E;
-  padding-top: 10px;
+.about_image {
+  height: 100%;
 }
 
 /* other stuff styling */
@@ -203,26 +263,17 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0 100px 0;
+  padding: 0 11.25rem 0 0;
+  height: 100vh;
+  background: #A2E6D0;
 }
 
 .more_text {
-  padding-left: 100px;
+  padding-left: 6.25rem;
 }
 
-.more_text a{
-  text-decoration: none;
-  color: #1E8A66;
-  font-family: 'Lato';
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.5;
-  transition: all 0.3s ease 0s;
-}
-
-.more_text a:hover{
-  color: #00D991;
-  transition: all 0.3s ease 0s;
+.more_image {
+  height: 100vh;
 }
 
 /* case study styling */
@@ -230,10 +281,26 @@ header {
 .title {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-self: center;
-  padding: 300px 250px;
+  padding: 0 11.25rem;
   text-align: left;
+  height: 100vh;
+}
+
+#light_blue
+{
+  background: #DFEBFF;
+}
+
+#light_teal
+{
+  background: #DCFFFC;
+}
+
+#light_orange
+{
+  background: rgb(252, 237, 219);
 }
 
 .title h2 {
@@ -245,60 +312,72 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 25px 250px;
+  padding: 6rem 11.25rem;
+}
+
+#dark_blue {
+  background: rgb(15, 45, 97);
+}
+
+#dark_teal {
+  background: rgb(7, 82, 77);
+}
+
+#dark_orange{
+  background: rgb(101, 57, 4);
 }
 
 .section1 h6{
-  color: #6E6E6E;
+  color: white;
   font-style: italic;
-  padding: 0 0 50px 0;
+  padding: 0 0 3.125rem 0;
+}
+
+.section1 h2{
+  color: white;
 }
 
 .section1 p{
-  padding-top: 10px;
+  color: white;
+  padding-top: .625rem;
+  font-size: 1.25rem;
 }
 
 .section1 img{
-  padding: 50px 0;
+  padding: 3.125rem 0;
   max-width: 100%;
   align-self: center;
 }
 
-#divider {
-  display: block;
-  align-self: center;
-  height: 2px;
-  width: 300px;
-  border-radius: 10px;
-  background: #b4b4b4;
-  opacity: 50%;
-  margin-top: 100px;
-  margin-bottom: 50px;
+.section1 a{
+  color: white;
 }
+
 
 /* main content styling */
 .section2 {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 25px 250px;
+  padding: 6rem 11.25rem;
 }
 
 .section2 p{
-  padding-top: 10px;
+  padding-top: .625rem;
+  font-size: 1.25rem;
 }
 
 /* id for adding top padding of 50px */
 #add_top_padding {
-  padding-top: 50px;
+  padding-top: 5rem;
 }
 
 .section2 h2{
-  padding: 50px 0 0 0;
+  padding: 5rem 0 0 0;
 }
 
 .section2 h3{
-  padding: 50px 0 0 0;
+  padding: 5rem 0 0 0;
 }
 
 /* grey h3 styling */
@@ -309,16 +388,20 @@ header {
 .section2 img{
   align-self: center;
   max-width: 100%;
-  padding: 50px 0 0 0;
+  padding: 5rem 0 0 0;
 }
 
 .withcaption {
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
 }
 
 .section2 h6 {
   color: #b4b4b4;
-  padding: 10px 0 0 0;
+  padding: .625rem 0 0 0;
   justify-self: center;
   text-align: center; 
+}
+/* id for full-width images like the logo design project */
+#full_width_image {
+  width: 100vw;
 }
