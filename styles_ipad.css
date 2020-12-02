@@ -1,0 +1,413 @@
+/* importing fonts */
+@import url("https://use.typekit.net/hiz7sft.css");
+@import url("https://use.typekit.net/hiz7sft.css");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* styling for content under header */
+.main {
+  padding: 0;
+}
+
+/* text styling */
+h1 {
+  font-family: 'Crimson Text';
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #262626;
+}
+
+h2 {
+  font-family: 'Crimson Text';
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #262626;
+}
+
+h3 {
+  font-family: 'Crimson Text';
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2;
+  color: #262626;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 2;
+  color: #262626;
+}
+
+h6 {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 2;
+  color: #262626;
+}
+
+/* styling for header */
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  /* sticky header */
+  background-color: #262626;
+  position: fixed;
+  z-index: 1000;
+}
+
+  /* styling for nav bar */
+  .nav_links li{
+    display: inline-block;
+    padding: 0 6.25rem;
+  }
+  .nav_links li a{
+    color: #b4b4b4;
+    font-size: 1.125rem;
+    text-decoration: none;
+    font-family: 'Lato';
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover{
+    color: white;
+    font-size: 1.125rem;
+    text-decoration: none;
+    font-family: 'Lato';
+  }
+
+  /* active page in nav bar */
+  .nav_links li a.current {
+    color: white;
+    font-weight:500;
+  }
+
+/* styling for splash */
+.splash{
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  text-align: left;
+  /* parallax background */
+  background: url('/images/splash_bg.png') fixed no-repeat center center/cover;
+}
+
+.splash .splash_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0 5rem;
+}
+
+.splash .splash_text h1{
+  color: #262626;
+}
+
+/* styling for project list on home */
+.projects_list{
+  padding: 4rem 5rem;
+}
+
+.projects_list h1{
+  padding-top: 8rem;
+  display: block;
+  color: #262626;
+}
+
+.project{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+.project .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: #1E8A66;
+  border-radius: .25rem;
+  color: #1E8A66;
+  transition: all 0.3s ease 0s;
+}
+
+.project .button:hover{
+  color: white;
+  background: #1E8A66;
+  transition: all 0.3s ease 0s;
+}
+
+.project_text{
+  padding-left: 6.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+/* hover on animation for image */
+.project_image:hover {
+  transform: scale(1.05,1.05);
+  /* box-shadow: 0 10px 30px #F4EEEE; */
+  transition: all 0.3s ease 0s;
+}
+
+/* hover off animation for image */
+.project_image {
+  transition: all 0.3s ease 0s;
+}
+
+/* styling for footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
+  background: #262626;
+}
+
+  /* styling for contact */
+  .footer li{
+    display: inline-block;
+    padding: 1rem 2rem 4rem 2rem;
+  }
+  .footer a{
+    color: #b4b4b4;
+    font-size: 1.125rem;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    transition: all 0.3s ease 0s;
+  }
+
+  .footer a:hover{
+    color: white;
+    font-size: 1.125rem;
+    text-decoration: none;
+    font-family: 'Open Sans';
+  }
+
+.footer h6{
+  color: #b4b4b4;
+}
+
+.footer h2{
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.footer p{
+  color: #b4b4b4;
+}
+
+/* about styling */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  width: 100vw;
+}
+
+.about_text {
+  padding-left: 5rem;
+} 
+
+.about_text h2{
+  color: #6E6E6E;
+  padding-top: .625rem;
+}
+
+/* .about_image {
+  width: 100vw;
+  height: 10rem;
+  background: url('/images/pho.png') no-repeat center center/cover;
+} */
+
+/* other stuff styling */
+
+.more {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 11.25rem 0 0;
+  height: 100vh;
+  background: #A2E6D0;
+}
+
+.more_text {
+  padding-left: 6.25rem;
+}
+
+.more_image {
+  height: 100vh;
+  width: 100vw;
+  background: url('/images/grad.png') no-repeat center center/cover;
+}
+
+/* case study styling */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 0 11.25rem;
+  text-align: left;
+  height: 100vh;
+}
+
+#light_blue
+{
+  background: #DFEBFF;
+}
+
+#light_teal
+{
+  background: #DCFFFC;
+}
+
+#light_orange
+{
+  background: rgb(252, 237, 219);
+}
+
+.title h2 {
+  color: #6E6E6E;
+}
+
+/* objectives, needs, and solution styling */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 6rem 11.25rem;
+}
+
+#dark_blue {
+  background: rgb(15, 45, 97);
+}
+
+#dark_teal {
+  background: rgb(7, 82, 77);
+}
+
+#dark_orange{
+  background: rgb(101, 57, 4);
+}
+
+.section1 h6{
+  color: white;
+  font-style: italic;
+  padding: 0 0 3.125rem 0;
+}
+
+.section1 h2{
+  color: white;
+}
+
+.section1 p{
+  color: white;
+  padding-top: .625rem;
+  font-size: 1.25rem;
+}
+
+.section1 img{
+  padding: 3.125rem 0;
+  max-width: 100%;
+  align-self: center;
+}
+
+.section1 a{
+  color: white;
+}
+
+
+/* main content styling */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 6rem 11.25rem;
+}
+
+.section2 p{
+  padding-top: .625rem;
+  font-size: 1.25rem;
+}
+
+/* id for adding top padding of 50px */
+#add_top_padding {
+  padding-top: 5rem;
+}
+
+.section2 h2{
+  padding: 5rem 0 0 0;
+}
+
+.section2 h3{
+  padding: 5rem 0 0 0;
+}
+
+/* grey h3 styling */
+#greytext {
+  color: #6E6E6E;
+}
+
+.section2 img{
+  align-self: center;
+  max-width: 100%;
+  padding: 5rem 0 0 0;
+}
+
+.withcaption {
+  padding-bottom: .625rem;
+}
+
+.section2 h6 {
+  color: #b4b4b4;
+  padding: .625rem 0 0 0;
+  justify-self: center;
+  text-align: center; 
+}
+/* id for full-width images like the logo design project */
+#full_width_image {
+  width: 100vw;
+}

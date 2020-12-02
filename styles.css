@@ -57,7 +57,7 @@ h6 {
 
 /* styling for header */
 header {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,6 +162,7 @@ header {
   color: #1E8A66;
   transition: all 0.3s ease 0s;
 }
+
 
 .project .button:hover{
   color: white;
